@@ -1,5 +1,5 @@
 // api.js
-const API_BASE = "http://localhost:5000";
+const API_BASE =  "https://azeemafirdouss-server1.onrender.com";
 
 function getToken() {
   return localStorage.getItem("token");
