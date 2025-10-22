@@ -526,26 +526,7 @@
           alert("Login failed.");
         });
     }
-    formContent.innerHTML = `
-  <label for="${role.toLowerCase()}Username">${usernameLabel}</label>
-  <div class="input-group">
-    <i class="bi ${usernameIcon}"></i>
-    <input type="${inputType}" id="${role.toLowerCase()}Username" required />
-  </div>
-  <div class="input-hint">${usernameHint}</div>
-  <label for="${role.toLowerCase()}Password">Password</label>
-  <div class="input-group">
-    <i class="bi bi-lock"></i>
-    <input type="password" id="${role.toLowerCase()}Password" required />
-  </div>
-  <div class="input-hint">Your password</div>
-  ${showForgot ? `<div style="display:flex;justify-content:space-between;margin-bottom:15px;">
-    <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
-    <a href="REGISTER.html">Register</a>
-  </div>` : ''}
-  <button type="button" onclick="loginUser('${role}')">Login</button>
-`;
-
+    
   </script>
 </body>
 </html>
