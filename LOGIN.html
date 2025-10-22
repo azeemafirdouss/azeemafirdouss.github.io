@@ -355,7 +355,7 @@
       const username = document.getElementById("rollNo").value;
       const password = document.getElementById("studentPassword").value;
 
-      fetch("http://localhost:5000/login", {
+      fetch("https://azeemafirdouss-server1.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ role: "student", username, password }),
@@ -399,7 +399,7 @@
       const username = document.getElementById("facultyId").value;
       const password = document.getElementById("facultyPassword").value;
 
-      fetch("http://localhost:5000/login", {
+      fetch("https://azeemafirdouss-server1.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ role: "faculty", username, password }),
@@ -443,7 +443,7 @@
       const username = document.getElementById("adminId").value;
       const password = document.getElementById("adminPassword").value;
 
-      fetch("http://localhost:5000/login", {
+      fetch("https://azeemafirdouss-server1.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ role: "admin", username, password }),
@@ -487,7 +487,7 @@
       const username = document.getElementById("clubheadId").value;
       const password = document.getElementById("clubheadPassword").value;
 
-      fetch("http://localhost:5000/login", {
+      fetch("https://azeemafirdouss-server1.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ role: "clubhead", username, password }),

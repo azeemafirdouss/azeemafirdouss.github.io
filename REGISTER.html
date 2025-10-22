@@ -313,11 +313,12 @@
     submitBtn.textContent = 'Registering...';
 
     try {
-      const res = await fetch("http://localhost:5000/register", {
+      const res = await fetch("hhttps://azeemafirdouss-server1.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+
       const response = await res.json();
       if (response.message && response.message.includes("✅")) {
         errorMsg.style.color = '#00C851';
